@@ -1,0 +1,115 @@
+  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2;
+    min-height: 100%;
+}
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px black;
+     padding: 10px;
+    text-align: center;
+}
+
+.header{
+ grid-area: header; 
+    background-color: #3DB2FF;
+}
+
+.primera{
+    grid-area: navbar;
+    background-color:rgb(241, 75, 14);
+    font-weight: bolder;
+    
+
+}
+
+
+.none{
+    text-decoration: none;
+    color: black;
+   
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(252, 158, 95);
+    font-weight: bolder;
+}
+
+.sidebar{
+    grid-area: sidebar ;
+    background-color: rgb(250, 236, 36);
+}
+
+
+
+
+.grid-container{
+    display: grid;
+    /* gap: 10px; */
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "sidebar" 
+    "footer";
+}
+
+@media (min-width: 600px) {
+    .grid-container{
+     grid-template-columns: 200px auto;
+     grid-template-rows:  90px  50px  auto 100px ;
+     grid-template-areas: 
+        "header    header" 
+        "navbar   navbar" 
+        "sidebar  main"  
+         "footer  footer" 
+          
+    }
+
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+
+.d {
+    color: white;
+}
+.color{
+    color: rgb(12, 12, 12);
+    font-weight: bolder;
+}
+
+
+.flex-container{
+    background-color:#460b77;
+    display: flex;
+    width: 1350px;
+    height: 110px;
+    
+    
+   
+}
+
+.flex-container div{
+    background-color: #976cbb;
+    padding: 10px;
+    border: 2px solid black;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+}
