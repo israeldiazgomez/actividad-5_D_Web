@@ -41,7 +41,7 @@ var Empleado = /** @class */ (function (_super) {
     Empleado.prototype.getMostrarEmpleado = function () {
         _super.prototype.getMostrarPersona.call(this);
         console.log("Cargo: " + this.cargo);
-        console.log("Hijos: " + this.cargo);
+        console.log("Hijos: " + this.salario);
     };
     return Empleado;
 }(Persona));
