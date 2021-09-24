@@ -11,6 +11,7 @@ let mostrarDatos = function(codigo:number, nombre:string, apellido:string, edad:
    
 }
 
+
 mostrarDatos( 181710029 ,'leinys', 'Giovannetty', 22);
  console.log(mostrarDatos)
 console.log("-------------------------------------------")
