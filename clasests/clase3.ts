@@ -45,7 +45,7 @@ class Empleado extends Persona {
     getMostrarEmpleado():void{
         super.getMostrarPersona()
         console.log(`Cargo: ${this.cargo}`)
-        console.log(`Hijos: ${this.salario}`) 
+        console.log(`Salario: ${this.salario}`) 
     }
 }
 
